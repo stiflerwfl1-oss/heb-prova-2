@@ -347,85 +347,6 @@
       flex-wrap: wrap;
     }
 
-    .review-tools {
-      margin-top: 10px;
-      border: 1px solid var(--line);
-      border-radius: 18px;
-      background: var(--nav-bg);
-      backdrop-filter: blur(12px);
-      box-shadow: var(--shadow-soft);
-      padding: 12px;
-      display: grid;
-      gap: 10px;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-
-    .tool-card {
-      border: 1px solid var(--line);
-      border-radius: 12px;
-      background: var(--paper-strong);
-      padding: 12px;
-    }
-
-    .tool-label {
-      margin: 0 0 8px;
-      color: var(--muted);
-      font-size: 0.8rem;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      font-weight: 800;
-    }
-
-    .tool-input {
-      width: 100%;
-      min-height: 40px;
-      border-radius: 10px;
-      border: 1px solid var(--line);
-      background: var(--paper);
-      color: var(--ink);
-      padding: 0 10px;
-      font: inherit;
-      font-size: 0.92rem;
-    }
-
-    .tool-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      align-items: center;
-    }
-
-    .tool-badge {
-      display: inline-flex;
-      min-height: 34px;
-      align-items: center;
-      border-radius: 999px;
-      border: 1px solid var(--pill-border);
-      background: var(--teal-soft);
-      color: var(--pill-text);
-      padding: 6px 10px;
-      font-size: 0.84rem;
-      font-weight: 700;
-    }
-
-    .tool-button {
-      min-height: 38px;
-      padding: 0 12px;
-      border-radius: 10px;
-      border: 1px solid var(--line);
-      background: var(--button-bg);
-      color: var(--ink);
-      font: inherit;
-      font-size: 0.9rem;
-      font-weight: 700;
-      cursor: pointer;
-    }
-
-    .tool-button:hover {
-      border-color: var(--button-hover-border);
-      color: var(--button-hover-text);
-      background: var(--teal-soft);
-    }
 
     .panel {
       margin-top: 18px;
@@ -858,9 +779,6 @@
       .stats {
         grid-template-columns: 1fr;
       }
-      .review-tools {
-        grid-template-columns: 1fr;
-      }
     }
   </style>
 </head>
@@ -910,7 +828,6 @@
         <a href="#escopo">Escopo</a>
         <a href="#unit-3">Unidade 3</a>
         <a href="#unit-4">Unidade 4</a>
-        <a href="#midias">Mídias</a>
         <a href="#revisao-final">Revisão Final</a>
       </nav>
 
@@ -923,26 +840,6 @@
         </div>
       </div>
 
-      <div class="review-tools">
-        <section class="tool-card">
-          <p class="tool-label">Busca de Aula</p>
-          <input id="lesson-search" class="tool-input" type="search" placeholder="Ex.: Furtado, 1930, Singer, Aula 18">
-        </section>
-        <section class="tool-card">
-          <p class="tool-label">Progresso</p>
-          <div class="tool-row">
-            <span id="progress-badge" class="tool-badge">0/9 revisadas</span>
-            <button type="button" id="reset-progress" class="tool-button">Resetar</button>
-          </div>
-        </section>
-        <section class="tool-card">
-          <p class="tool-label">Treino rápido</p>
-          <div class="tool-row">
-            <button type="button" id="next-question" class="tool-button">Gerar pergunta</button>
-            <span id="question-output" class="tool-badge">Pronto</span>
-          </div>
-        </section>
-      </div>
     </div>
 
     <section class="panel" id="escopo">
@@ -1358,35 +1255,6 @@
       </div>
     </section>
 
-    <section class="panel" id="midias">
-      <p class="section-kicker">Podcasts e materiais</p>
-      <h2>Mini player do Google Drive</h2>
-      <div class="panel-grid">
-        <article class="mini-card">
-          <p class="section-kicker">Biblioteca incorporada</p>
-          <p>Os podcasts das aulas estão incorporados abaixo de cada aula, com link direto para o texto base e para o caderno mágico. A janela abaixo carrega a pasta principal do Drive; se o Google bloquear a visualização incorporada em algum navegador, use o link externo.</p>
-          <iframe
-            class="drive-audio"
-            style="height: 360px; margin-top: 16px;"
-            src="https://drive.google.com/embeddedfolderview?id=1zgWE_e8xRL-fKyGXwDzAGMllQKpypUqS#grid"
-            title="Podcasts e materiais HEB - Prova 2"
-            loading="lazy"
-            allow="autoplay; fullscreen"
-          ></iframe>
-          <div class="audio-fallback"><a href="https://drive.google.com/drive/folders/1zgWE_e8xRL-fKyGXwDzAGMllQKpypUqS" target="_blank" rel="noopener noreferrer">Abrir pasta de podcasts e materiais no Drive</a></div>
-        </article>
-        <article class="mini-card">
-          <p class="section-kicker">Sugestão de uso</p>
-          <ul class="mini-list">
-            <li>Abra o Drive após ler cada aula.</li>
-            <li>Use o podcast para revisão passiva.</li>
-            <li>Use texto base e caderno mágico para conferir os pontos de cobrança.</li>
-            <li>Volte para a revisão final para treinar respostas completas.</li>
-          </ul>
-        </article>
-      </div>
-    </section>
-
     <section class="review" id="revisao-final">
       <div class="review-head">
         <div>
@@ -1467,18 +1335,25 @@
     const expandAll = document.getElementById('expand-all');
     const collapseAll = document.getElementById('collapse-all');
     const navLinks = document.querySelectorAll('#top-nav a');
-    const sections = document.querySelectorAll('#escopo, #unit-3, #unit-4, #midias, #revisao-final');
-    const lessonSearch = document.getElementById('lesson-search');
-    const progressBadge = document.getElementById('progress-badge');
-    const resetProgress = document.getElementById('reset-progress');
-    const nextQuestion = document.getElementById('next-question');
-    const questionOutput = document.getElementById('question-output');
-
+    const sections = document.querySelectorAll('#escopo, #unit-3, #unit-4, #revisao-final');
     const THEME_KEY = 'heb-theme';
-    const PROGRESS_KEY = 'heb-revisadas-v2';
     const root = document.documentElement;
     const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    let activeTheme = localStorage.getItem(THEME_KEY);
+    const safeGetTheme = () => {
+      try {
+        return localStorage.getItem(THEME_KEY);
+      } catch {
+        return null;
+      }
+    };
+    const safeSetTheme = (theme) => {
+      try {
+        localStorage.setItem(THEME_KEY, theme);
+      } catch {
+        // Ignore storage failures (private mode / blocked storage)
+      }
+    };
+    let activeTheme = safeGetTheme();
 
     if (activeTheme !== 'light' && activeTheme !== 'dark') {
       activeTheme = prefersDark ? 'dark' : 'light';
@@ -1486,6 +1361,7 @@
 
     const applyTheme = (theme) => {
       root.setAttribute('data-theme', theme);
+      document.body.setAttribute('data-theme', theme);
       if (!themeToggle) return;
       const isDark = theme === 'dark';
       themeToggle.textContent = isDark ? 'Modo claro' : 'Modo noturno';
@@ -1498,7 +1374,7 @@
       themeToggle.addEventListener('click', () => {
         activeTheme = activeTheme === 'dark' ? 'light' : 'dark';
         applyTheme(activeTheme);
-        localStorage.setItem(THEME_KEY, activeTheme);
+        safeSetTheme(activeTheme);
       });
     }
 
@@ -1510,70 +1386,14 @@
     }
     if (collapseAll) collapseAll.addEventListener('click', () => lessons.forEach((lesson) => { lesson.open = false; }));
 
-    const parseProgress = () => {
-      try {
-        const parsed = JSON.parse(localStorage.getItem(PROGRESS_KEY) || '[]');
-        return new Set(Array.isArray(parsed) ? parsed : []);
-      } catch {
-        return new Set();
-      }
-    };
-
-    const revisadas = parseProgress();
-    const updateProgress = () => {
-      if (!progressBadge) return;
-      progressBadge.textContent = `${revisadas.size}/9 revisadas`;
-    };
-    updateProgress();
-
     lessons.forEach((lesson) => {
       lesson.addEventListener('toggle', () => {
         if (!lesson.open) return;
         lessons.forEach((other) => {
           if (other !== lesson) other.open = false;
         });
-        revisadas.add(lesson.id);
-        localStorage.setItem(PROGRESS_KEY, JSON.stringify([...revisadas]));
-        updateProgress();
       });
     });
-
-    if (resetProgress) {
-      resetProgress.addEventListener('click', () => {
-        revisadas.clear();
-        localStorage.setItem(PROGRESS_KEY, JSON.stringify([]));
-        updateProgress();
-      });
-    }
-
-    if (lessonSearch) {
-      lessonSearch.addEventListener('input', () => {
-        const term = lessonSearch.value.trim().toLowerCase();
-        lessons.forEach((lesson) => {
-          const show = !term || lesson.textContent.toLowerCase().includes(term);
-          lesson.style.display = show ? '' : 'none';
-        });
-      });
-    }
-
-    const quickQuestions = [
-      'A12: descreva a pirâmide oligárquica e sua lógica clientelista.',
-      'A13: por que a transição capitalista não elimina dependência externa?',
-      'A14: compare papelistas e metalistas no contexto da Primeira República.',
-      'A15: diferencie modernização econômica e autonomia nacional em Singer.',
-      'A16: por que 1930 é transição de longo prazo e não ruptura instantânea?',
-      'A17: relacione desenvolvimentismo, trabalhismo e nacionalismo varguista.',
-      'A18: explique a sequência causal de Furtado na crise de 1929.',
-      'A19: caracterize Estado de Compromisso e aparelho econômico estatal.',
-      'A20: compare as óticas de Suzigan sobre origens da industrialização.'
-    ];
-    let questionIdx = 0;
-    if (nextQuestion && questionOutput) {
-      nextQuestion.addEventListener('click', () => {
-        questionOutput.textContent = quickQuestions[questionIdx % quickQuestions.length];
-        questionIdx += 1;
-      });
-    }
 
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
