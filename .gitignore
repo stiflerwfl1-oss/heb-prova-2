@@ -1,3 +1,5 @@
 drive-*.html
 preview-*.png
 annotations/
+logs/
+.venv-notebooklm/
