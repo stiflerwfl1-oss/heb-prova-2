@@ -1,0 +1,1147 @@
+﻿<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>História Econômica do Brasil | Prova 2</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f4efe6;
+      --paper: #fcfaf6;
+      --paper-strong: #fffdfa;
+      --panel: rgba(255, 255, 255, 0.76);
+      --ink: #1e2930;
+      --muted: #5d6970;
+      --line: #d7ccbc;
+      --line-strong: #b7a790;
+      --teal: #1f5e66;
+      --teal-soft: #dcecef;
+      --sand: #e8dcc7;
+      --rose: #7a3f4d;
+      --amber: #8d6b1f;
+      --forest: #3f604b;
+      --shadow: 0 18px 42px rgba(25, 35, 39, 0.08);
+      --shadow-soft: 0 10px 22px rgba(25, 35, 39, 0.05);
+      --r-xl: 28px;
+      --r-lg: 20px;
+      --r-md: 14px;
+      --r-sm: 10px;
+      --max: 1220px;
+      --bg-radial-1: rgba(31, 94, 102, 0.14);
+      --bg-radial-2: rgba(141, 107, 31, 0.08);
+      --bg-grad-start: #f7f3eb;
+      --bg-grad-end: #f2ede4;
+      --code-bg: #f0ebe2;
+      --hero-grad-start: rgba(255,255,255,0.9);
+      --hero-grad-end: rgba(248,243,234,0.94);
+      --hero-orb: rgba(31, 94, 102, 0.18);
+      --nav-bg: rgba(252, 250, 246, 0.9);
+      --button-bg: rgba(255,255,255,0.84);
+      --button-hover-border: #9dc1c6;
+      --button-hover-text: #144951;
+      --pill-text: #174d55;
+      --pill-border: #b9d5d9;
+      --surface-soft: rgba(255,255,255,0.56);
+      --surface-subtle: rgba(255,255,255,0.54);
+      --surface-lesson: rgba(255,255,255,0.58);
+      --surface-card: rgba(255,255,255,0.72);
+      --surface-timeline: rgba(255,255,255,0.66);
+      --lesson-num-text: #174c54;
+      --priority-high-text: #7a3f4d;
+      --priority-high-bg: rgba(122, 63, 77, 0.12);
+      --priority-high-border: rgba(122, 63, 77, 0.18);
+      --priority-medium-text: #855f16;
+      --priority-medium-bg: rgba(141, 107, 31, 0.12);
+      --priority-medium-border: rgba(141, 107, 31, 0.18);
+      --study-text: #25313a;
+      --audio-surface: #ffffff;
+      --control-surface: #ffffff;
+      --switch-bg: rgba(255,255,255,0.9);
+    }
+
+    :root[data-theme="dark"] {
+      color-scheme: dark;
+      --bg: #0f151b;
+      --paper: #121b23;
+      --paper-strong: #17222b;
+      --panel: rgba(17, 26, 34, 0.84);
+      --ink: #e8f0f4;
+      --muted: #aab8c2;
+      --line: #2b3c48;
+      --line-strong: #3f5564;
+      --teal: #8ec9d1;
+      --teal-soft: #1c3340;
+      --sand: #2a3640;
+      --rose: #e0a7b2;
+      --amber: #d0b06c;
+      --forest: #8fb39e;
+      --shadow: 0 18px 42px rgba(0, 0, 0, 0.45);
+      --shadow-soft: 0 10px 22px rgba(0, 0, 0, 0.35);
+      --bg-radial-1: rgba(94, 164, 177, 0.22);
+      --bg-radial-2: rgba(163, 129, 78, 0.18);
+      --bg-grad-start: #0d141b;
+      --bg-grad-end: #0a1016;
+      --code-bg: #23313b;
+      --hero-grad-start: rgba(26, 38, 47, 0.95);
+      --hero-grad-end: rgba(20, 31, 40, 0.95);
+      --hero-orb: rgba(111, 178, 190, 0.2);
+      --nav-bg: rgba(18, 28, 36, 0.92);
+      --button-bg: rgba(26, 40, 50, 0.88);
+      --button-hover-border: #4e7f91;
+      --button-hover-text: #d8eef4;
+      --pill-text: #d7ecf2;
+      --pill-border: #355867;
+      --surface-soft: rgba(23, 34, 43, 0.86);
+      --surface-subtle: rgba(24, 36, 45, 0.8);
+      --surface-lesson: rgba(21, 33, 42, 0.88);
+      --surface-card: rgba(22, 35, 44, 0.86);
+      --surface-timeline: rgba(20, 32, 41, 0.9);
+      --lesson-num-text: #d8edf2;
+      --priority-high-text: #f1c0cb;
+      --priority-high-bg: rgba(196, 104, 124, 0.2);
+      --priority-high-border: rgba(196, 104, 124, 0.35);
+      --priority-medium-text: #f0d79a;
+      --priority-medium-bg: rgba(174, 136, 64, 0.2);
+      --priority-medium-border: rgba(174, 136, 64, 0.36);
+      --study-text: #dce6eb;
+      --audio-surface: #111920;
+      --control-surface: #111a22;
+      --switch-bg: rgba(28, 43, 53, 0.92);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: "Manrope", sans-serif;
+      line-height: 1.65;
+      background:
+        radial-gradient(1000px 420px at 110% -10%, var(--bg-radial-1), transparent 60%),
+        radial-gradient(850px 420px at -10% 24%, var(--bg-radial-2), transparent 58%),
+        linear-gradient(180deg, var(--bg-grad-start) 0%, var(--bg-grad-end) 100%);
+    }
+
+    h1, h2, h3, h4 {
+      margin: 0;
+      font-family: "Fraunces", serif;
+      letter-spacing: -0.02em;
+      line-height: 1.08;
+      font-weight: 600;
+    }
+
+    h1 { font-size: clamp(2.3rem, 4.4vw, 4.5rem); max-width: 13ch; }
+    h2 { font-size: clamp(1.5rem, 2.5vw, 2.45rem); }
+    h3 { font-size: 1.25rem; }
+    h4 { font-size: 1rem; }
+
+    p { margin: 0; }
+    a { color: inherit; }
+    code {
+      padding: 0.16rem 0.4rem;
+      border-radius: 999px;
+      background: var(--code-bg);
+      font-size: 0.92em;
+    }
+
+    .page {
+      width: min(var(--max), 94vw);
+      margin: 0 auto;
+      padding: 24px 0 72px;
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding: 34px;
+      border-radius: 32px;
+      border: 1px solid var(--line);
+      background:
+        linear-gradient(145deg, var(--hero-grad-start), var(--hero-grad-end)),
+        var(--paper);
+      box-shadow: var(--shadow);
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      right: -120px;
+      bottom: -170px;
+      width: 360px;
+      height: 360px;
+      border-radius: 50%;
+      background: radial-gradient(circle, var(--hero-orb), rgba(31, 94, 102, 0));
+      pointer-events: none;
+    }
+
+    .eyebrow,
+    .section-kicker,
+    .card-kicker {
+      font-size: 0.78rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      font-weight: 800;
+    }
+
+    .eyebrow { color: var(--teal); margin-bottom: 10px; }
+    .section-kicker { color: var(--rose); margin-bottom: 10px; }
+    .card-kicker { color: var(--muted); margin-bottom: 8px; }
+
+    .hero-copy {
+      max-width: 820px;
+      margin-top: 14px;
+      color: var(--muted);
+      font-size: 1.03rem;
+    }
+
+    .hero-grid {
+      margin-top: 28px;
+      display: grid;
+      grid-template-columns: 1.45fr 1fr;
+      gap: 18px;
+    }
+
+    .hero-panel,
+    .hero-side,
+    .panel,
+    .unit,
+    .review {
+      border: 1px solid var(--line);
+      border-radius: var(--r-xl);
+      background: var(--panel);
+      backdrop-filter: blur(10px);
+      box-shadow: var(--shadow-soft);
+    }
+
+    .hero-panel,
+    .hero-side,
+    .panel {
+      padding: 20px;
+    }
+
+    .hero-panel p,
+    .hero-side p,
+    .panel p {
+      color: var(--muted);
+    }
+
+    .stats {
+      margin-top: 16px;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .stat {
+      padding: 12px;
+      border-radius: var(--r-md);
+      border: 1px solid var(--line);
+      background: var(--paper-strong);
+    }
+
+    .stat b {
+      display: block;
+      margin-bottom: 4px;
+      color: var(--muted);
+      font-size: 0.76rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .hero-list,
+    .mini-list,
+    .side-list,
+    .card ul,
+    .review-list,
+    .compare-list,
+    .lesson-meta {
+      margin: 0;
+      padding-left: 18px;
+    }
+
+    .hero-list li,
+    .mini-list li,
+    .side-list li,
+    .card li,
+    .review-list li,
+    .compare-list li,
+    .lesson-meta li {
+      margin: 0.28rem 0;
+    }
+
+    .sticky-shell {
+      position: sticky;
+      top: 10px;
+      z-index: 20;
+      margin: 16px 0 18px;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+      will-change: transform, opacity;
+    }
+
+    .sticky-shell.is-hidden {
+      transform: translateY(-145%);
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .main-nav,
+    .toolbar {
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: var(--nav-bg);
+      backdrop-filter: blur(12px);
+      box-shadow: var(--shadow-soft);
+    }
+
+    .main-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      padding: 10px;
+    }
+
+    .main-nav a,
+    .toolbar button {
+      font: inherit;
+      text-decoration: none;
+      cursor: pointer;
+      padding: 9px 13px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: var(--button-bg);
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--ink);
+    }
+
+    .main-nav a:hover,
+    .main-nav a.active,
+    .toolbar button:hover {
+      background: var(--teal-soft);
+      border-color: var(--button-hover-border);
+      color: var(--button-hover-text);
+    }
+
+    .toolbar {
+      margin-top: 10px;
+      padding: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .toolbar-info {
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .toolbar-actions {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .panel {
+      margin-top: 18px;
+    }
+
+    .panel-grid {
+      display: grid;
+      grid-template-columns: 1.25fr 1fr;
+      gap: 18px;
+      margin-top: 18px;
+    }
+
+    .mini-card {
+      padding: 16px;
+      border-radius: var(--r-lg);
+      border: 1px solid var(--line);
+      background: var(--paper-strong);
+    }
+
+    .pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 16px;
+    }
+
+    .pill {
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: var(--teal-soft);
+      color: var(--pill-text);
+      font-size: 0.86rem;
+      font-weight: 700;
+      border: 1px solid var(--pill-border);
+    }
+
+    .unit,
+    .review {
+      margin-top: 26px;
+      padding: 28px;
+    }
+
+    .unit-head,
+    .review-head {
+      display: grid;
+      grid-template-columns: 1.35fr 0.85fr;
+      gap: 18px;
+      margin-bottom: 18px;
+    }
+
+    .unit-side,
+    .review-side {
+      padding: 18px;
+      border-radius: var(--r-lg);
+      border: 1px solid var(--line);
+      background: var(--surface-soft);
+    }
+
+    .section-intro {
+      margin-top: 10px;
+      color: var(--muted);
+      max-width: 78ch;
+    }
+
+    .subtle-note {
+      margin-top: 12px;
+      padding: 12px 14px;
+      border-left: 3px solid var(--line-strong);
+      border-radius: 0 12px 12px 0;
+      background: var(--surface-subtle);
+      color: var(--muted);
+      font-size: 0.93rem;
+    }
+
+    .lesson-list {
+      display: grid;
+      gap: 14px;
+    }
+
+    .lesson {
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: var(--surface-lesson);
+      overflow: hidden;
+    }
+
+    .lesson summary {
+      list-style: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 16px 18px;
+      font-weight: 800;
+      font-size: 1rem;
+    }
+
+    .lesson summary::-webkit-details-marker { display: none; }
+
+    .lesson-num {
+      width: 42px;
+      height: 42px;
+      border-radius: 14px;
+      display: inline-grid;
+      place-items: center;
+      background: var(--teal-soft);
+      color: var(--lesson-num-text);
+      font-weight: 800;
+      flex: 0 0 auto;
+    }
+
+    .lesson-date {
+      margin-left: auto;
+      color: var(--muted);
+      font-size: 0.85rem;
+      font-weight: 700;
+    }
+
+    .priority {
+      margin-left: 10px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      font-size: 0.76rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      font-weight: 800;
+      border: 1px solid transparent;
+    }
+
+    .priority.high {
+      color: var(--priority-high-text);
+      background: var(--priority-high-bg);
+      border-color: var(--priority-high-border);
+    }
+
+    .priority.medium {
+      color: var(--priority-medium-text);
+      background: var(--priority-medium-bg);
+      border-color: var(--priority-medium-border);
+    }
+
+    .lesson-body {
+      padding: 0 18px 18px;
+      border-top: 1px solid var(--line);
+    }
+
+    .lesson-meta {
+      margin-top: 14px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .study-text {
+      margin-top: 14px;
+      display: grid;
+      gap: 12px;
+    }
+
+    .study-text p { color: var(--study-text); }
+
+    .essay-box,
+    .audio-box,
+    .revision-box {
+      margin-top: 16px;
+      padding: 16px;
+      border-radius: 16px;
+      border: 1px solid var(--line);
+      background: var(--paper-strong);
+    }
+
+    .essay-box p + p,
+    .revision-box p + p {
+      margin-top: 10px;
+    }
+
+    .card-grid,
+    .review-grid {
+      margin-top: 16px;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .card,
+    .compare-card {
+      padding: 16px;
+      border-radius: 16px;
+      border: 1px solid var(--line);
+      background: var(--surface-card);
+      min-height: 100%;
+    }
+
+    .card p,
+    .compare-card p { color: var(--muted); }
+
+    .card h4,
+    .compare-card h3 {
+      margin-bottom: 10px;
+    }
+
+    audio {
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    .drive-audio {
+      width: 100%;
+      height: 84px;
+      margin-top: 10px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: var(--audio-surface);
+    }
+
+    .audio-native-wrap {
+      margin-top: 10px;
+    }
+
+    .audio-controls {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 8px;
+      margin-bottom: 8px;
+      color: var(--muted);
+      font-size: 0.88rem;
+      font-weight: 700;
+    }
+
+    .speed-select {
+      padding: 6px 9px;
+      border-radius: 8px;
+      border: 1px solid var(--line);
+      background: var(--control-surface);
+      color: var(--ink);
+      font: inherit;
+      font-size: 0.86rem;
+      cursor: pointer;
+    }
+
+    .player-switch {
+      margin-top: 10px;
+      padding: 8px 12px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: var(--switch-bg);
+      color: var(--ink);
+      font: inherit;
+      font-weight: 700;
+      font-size: 0.85rem;
+      cursor: pointer;
+    }
+
+    .player-switch:hover {
+      background: var(--teal-soft);
+      border-color: var(--button-hover-border);
+      color: var(--button-hover-text);
+    }
+
+    .audio-fallback {
+      margin-top: 10px;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .audio-fallback a {
+      color: var(--teal);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .audio-fallback a:hover {
+      text-decoration: underline;
+    }
+
+    .review-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .timeline {
+      margin-top: 16px;
+      display: grid;
+      gap: 10px;
+    }
+
+    .timeline-item {
+      padding: 14px 16px;
+      border-radius: 16px;
+      border: 1px solid var(--line);
+      background: var(--surface-timeline);
+    }
+
+    .timeline-item b {
+      display: block;
+      margin-bottom: 6px;
+      color: var(--teal);
+    }
+
+    @media (max-width: 1040px) {
+      .hero-grid,
+      .panel-grid,
+      .unit-head,
+      .review-head,
+      .review-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 760px) {
+      .page { width: min(100vw, 96vw); }
+      .hero,
+      .unit,
+      .review,
+      .panel { padding: 20px; }
+      .lesson summary {
+        align-items: flex-start;
+        flex-wrap: wrap;
+      }
+      .lesson-date {
+        margin-left: 0;
+        width: 100%;
+      }
+      .card-grid,
+      .stats {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="hero" id="topo">
+      <p class="eyebrow">História Econômica do Brasil · Prova 2</p>
+      <h1>Central de revisão das aulas 12 a 20</h1>
+      <p class="hero-copy">
+        Esta versão atualiza o site para as unidades 3 e 4, cobrindo República Velha, transição capitalista, Revolução de 1930, Era Vargas, política econômica, instituições e origens da industrialização. O formato segue o site anterior: aulas em blocos, conceitos-chave, perguntas-guia, revisão final e acesso direto às mídias no Drive.
+      </p>
+
+      <div class="hero-grid">
+        <section class="hero-panel">
+          <p class="section-kicker">Como usar</p>
+          <ul class="hero-list">
+            <li>Leia primeiro o resumo de cada aula e depois use os cards para fixar conceitos, autores e cronologia.</li>
+            <li>Use as perguntas-guia como treino de resposta discursiva.</li>
+            <li>Abra os podcasts e vídeos pelo Drive quando quiser revisar em áudio ou vídeo.</li>
+            <li>Feche pela revisão final para cruzar República Velha, 1930, Vargas e industrialização.</li>
+          </ul>
+          <div class="pill-row">
+            <span class="pill">Aulas 12–16: Unidade 3</span>
+            <span class="pill">Aulas 17–20: Unidade 4</span>
+            <span class="pill">Base: roteiro HEB + NotebookLM</span>
+            <span class="pill">Mídias: Google Drive</span>
+          </div>
+        </section>
+
+        <aside class="hero-side">
+          <p class="section-kicker">Recorte da prova</p>
+          <div class="stats">
+            <div class="stat"><b>Aulas</b>9 aulas em ordem cronológica</div>
+            <div class="stat"><b>Unidades</b>República Velha e Era Vargas</div>
+            <div class="stat"><b>Temas críticos</b>Oligarquias, imperialismo, 1930, Estado e industrialização</div>
+            <div class="stat"><b>Mídias</b>Podcasts e vídeos redirecionados para o Drive</div>
+          </div>
+        </aside>
+      </div>
+    </header>
+
+    <div class="sticky-shell">
+      <nav class="main-nav" id="top-nav">
+        <a href="#escopo">Escopo</a>
+        <a href="#unit-3">Unidade 3</a>
+        <a href="#unit-4">Unidade 4</a>
+        <a href="#midias">Mídias</a>
+        <a href="#revisao-final">Revisão Final</a>
+      </nav>
+
+      <div class="toolbar">
+        <div class="toolbar-info">Página atualizada: aulas 12 a 20, unidades 3 e 4.</div>
+        <div class="toolbar-actions">
+          <button type="button" id="theme-toggle" aria-pressed="false">Modo noturno</button>
+          <button type="button" id="expand-all">Expandir aulas</button>
+          <button type="button" id="collapse-all">Recolher aulas</button>
+        </div>
+      </div>
+    </div>
+
+    <section class="panel" id="escopo">
+      <p class="section-kicker">Escopo da prova</p>
+      <h2>O que esta página cobre e o que ela prioriza</h2>
+      <div class="panel-grid">
+        <article class="mini-card">
+          <p class="section-kicker">Eixos recorrentes</p>
+          <ul class="mini-list">
+            <li>República Velha como liberalismo oligárquico, federalismo excludente e política dos governadores.</li>
+            <li>Transição para o capitalismo industrial em meio a café, imperialismo e finanças externas.</li>
+            <li>Revolução de 1930 como inflexão política, econômica e institucional de longo prazo.</li>
+            <li>Era Vargas como construção de Estado nacional, política econômica anticíclica e industrialização.</li>
+          </ul>
+        </article>
+        <article class="mini-card">
+          <p class="section-kicker">Observação importante</p>
+          <p>O fio condutor é a passagem de uma economia agroexportadora oligárquica para um capitalismo mais integrado, urbano-industrial e comandado por um Estado nacional em consolidação. A prova tende a cobrar menos datas isoladas e mais relações entre política, economia, Estado e classes sociais.</p>
+          <div class="subtle-note">Use os autores como chaves interpretativas: Maria Efigênia Resende, Caio Prado Júnior, Paul Singer, Gustavo Franco, Marieta/Sabino, Celso Furtado, Sonia Draibe e Wilson Suzigan.</div>
+        </article>
+      </div>
+    </section>
+
+    <section class="unit" id="unit-3">
+      <div class="unit-head">
+        <div>
+          <p class="section-kicker">Unidade 3</p>
+          <h2>República Velha, capitalismo internacional e crise da ordem oligárquica</h2>
+          <p class="section-intro">A unidade 3 acompanha a Primeira República como período de liberalismo oligárquico, instabilidade econômica, expansão cafeeira, penetração imperialista e reordenamento financeiro. O ponto de chegada é a Revolução de 1930, entendida como transição de longo prazo e ruptura da ordem política da República Velha.</p>
+        </div>
+        <aside class="unit-side">
+          <p class="section-kicker">Fio condutor</p>
+          <ul class="side-list">
+            <li>Constituição liberal e prática política oligárquica.</li>
+            <li>Café, finanças externas e internacionalização da economia.</li>
+            <li>Metalistas versus papelistas e instabilidade monetária.</li>
+            <li>Crise dos anos 1920 e recomposição política em 1930.</li>
+          </ul>
+          <div class="subtle-note">A unidade é melhor estudada como processo: 1889–1930 não é só República Velha, mas transição capitalista.</div>
+        </aside>
+      </div>
+
+      <div class="lesson-list">
+        <details class="lesson" id="aula-12" open>
+          <summary><span class="lesson-num">A12</span>República Velha I <span class="lesson-date">24/03/2014</span><span class="priority high">base política</span></summary>
+          <div class="lesson-body">
+            <ul class="lesson-meta">
+              <li><strong>Texto de apoio:</strong> Maria Efigênia Resende.</li>
+              <li><strong>Função na prova:</strong> explicar o funcionamento político que sustenta a economia oligárquica.</li>
+            </ul>
+            <div class="study-text">
+              <p>A aula apresenta a Primeira República como período de ruptura institucional com o Império, mas de permanência social e política das elites regionais. A Constituição de 1891 tinha linguagem liberal, federalista e republicana, porém operava dentro de um sistema excludente, com participação política restrita, voto controlado e domínio das oligarquias estaduais.</p>
+              <p>O conceito central é liberalismo oligárquico. Ele indica a combinação entre formas institucionais modernas e práticas políticas conservadoras. Coronelismo, mandonismo local, oligarquias estaduais e política dos governadores formam o mecanismo de estabilização do regime. A autonomia dos estados fortalece elites regionais, especialmente São Paulo e Minas Gerais.</p>
+              <p>A política dos governadores aparece como tentativa de resolver a instabilidade inicial da República, coordenando poderes locais, estaduais e federais. O sistema não era democrático: sua estabilidade dependia de acordos entre elites, controle eleitoral e exclusão popular. A crise final ocorre quando esses pactos deixam de produzir consenso, abrindo caminho para 1930.</p>
+            </div>
+            <div class="card-grid">
+              <article class="card"><p class="card-kicker">Pontos principais</p><h4>Núcleo da aula</h4><ul><li>Constituição liberal com prática oligárquica.</li><li>Federalismo como fortalecimento das elites estaduais.</li><li>Coronelismo e controle eleitoral na base do sistema.</li><li>Política dos governadores como mecanismo de estabilidade.</li></ul></article>
+              <article class="card"><p class="card-kicker">Conceitos-chave</p><h4>Vocabulário necessário</h4><ul><li>Liberalismo oligárquico</li><li>Coronelismo</li><li>Política dos governadores</li><li>Oligarquias estaduais</li></ul></article>
+              <article class="card"><p class="card-kicker">Pergunta-guia</p><h4>Treino discursivo</h4><ul><li>Como a Primeira República pôde ser liberal no plano institucional e oligárquica na prática política?</li></ul></article>
+              <article class="card"><p class="card-kicker">Armadilha</p><h4>Como não errar</h4><ul><li>Não confundir República com democratização efetiva.</li><li>Não tratar a política do café com leite como acordo sempre automático e sem conflitos.</li></ul></article>
+            </div>
+          </div>
+        </details>
+
+        <details class="lesson" id="aula-13">
+          <summary><span class="lesson-num">A13</span>República Velha II <span class="lesson-date">26/03/2014</span><span class="priority high">transição capitalista</span></summary>
+          <div class="lesson-body">
+            <ul class="lesson-meta">
+              <li><strong>Texto de apoio:</strong> Caio Prado Júnior.</li>
+              <li><strong>Função na prova:</strong> ligar República Velha, café, imperialismo e formação de relações capitalistas.</li>
+            </ul>
+            <div class="study-text">
+              <p>A aula discute a República Velha como transição para o capitalismo industrial. Caio Prado Júnior interpreta o período como República Burguesa, marcada pela expansão de relações capitalistas sem rompimento completo com a base agroexportadora. O café continua sendo o núcleo dinâmico, mas se articula cada vez mais a crédito, bancos, transportes, mercado urbano e capital estrangeiro.</p>
+              <p>O ponto decisivo é a contradição: o imperialismo explora, transfere excedentes e mantém o país em posição subordinada, mas também moderniza e impulsiona setores da economia. A internacionalização cresce por ferrovias, empréstimos, serviços públicos e comércio exterior. O Brasil se integra mais profundamente ao capitalismo mundial, mas de forma dependente.</p>
+              <p>Essa leitura exige cuidado. Não se trata de dizer que o país virou industrial de imediato, e sim que a estrutura agroexportadora passou a conviver com mecanismos capitalistas mais amplos. O período é de transição, com modernização parcial, concentração econômica e dependência externa.</p>
+            </div>
+            <div class="card-grid">
+              <article class="card"><p class="card-kicker">Pontos principais</p><h4>Núcleo da aula</h4><ul><li>República Velha como transição capitalista.</li><li>Café como base econômica e articulador de setores modernos.</li><li>Imperialismo como exploração e modernização contraditória.</li><li>Internacionalização crescente da economia brasileira.</li></ul></article>
+              <article class="card"><p class="card-kicker">Conceitos-chave</p><h4>Termos centrais</h4><ul><li>República Burguesa</li><li>Capitalismo dependente</li><li>Imperialismo</li><li>Agroexportação</li></ul></article>
+              <article class="card"><p class="card-kicker">Pergunta-guia</p><h4>Treino discursivo</h4><ul><li>Por que Caio Prado vê a República Velha como transição capitalista, mas não como industrialização plena?</li></ul></article>
+              <article class="card"><p class="card-kicker">Conexão</p><h4>Ligação com a aula 14</h4><ul><li>A aula 13 abre o problema; a aula 14 aprofunda a inserção externa com Paul Singer.</li></ul></article>
+            </div>
+          </div>
+        </details>
+
+        <details class="lesson" id="aula-14">
+          <summary><span class="lesson-num">A14</span>Brasil e capitalismo internacional <span class="lesson-date">31/03/2014</span><span class="priority high">inserção externa</span></summary>
+          <div class="lesson-body">
+            <ul class="lesson-meta">
+              <li><strong>Texto de apoio:</strong> Paul Singer.</li>
+              <li><strong>Função na prova:</strong> explicar a República Velha dentro da economia mundial e do imperialismo.</li>
+            </ul>
+            <div class="study-text">
+              <p>Paul Singer situa o Brasil entre 1889 e 1930 no contexto do capitalismo internacional. O período corresponde à fase imperialista do capitalismo, marcada por exportação de capitais, grandes empresas, disputa por mercados e forte integração financeira. O Brasil entra nesse processo como economia primário-exportadora, dependente de capitais externos e vulnerável às oscilações internacionais.</p>
+              <p>A penetração imperialista aparece principalmente em ferrovias, energia, serviços urbanos, empréstimos e controle de fluxos financeiros. O Estado subsidia e garante rentabilidade para setores estratégicos, enquanto o capital estrangeiro captura oportunidades de renda. Isso moderniza infraestrutura, mas também transfere excedentes e aprofunda o endividamento.</p>
+              <p>A aula complementa Caio Prado: a economia brasileira se moderniza, porém sob dependência. A inserção externa não é neutra; ela condiciona o padrão de crescimento, limita a diversificação e reforça a centralidade da agroexportação.</p>
+            </div>
+            <div class="card-grid">
+              <article class="card"><p class="card-kicker">Pontos principais</p><h4>Núcleo da aula</h4><ul><li>Brasil integrado à fase imperialista do capitalismo.</li><li>Exportação de capitais e serviços públicos como canais de dependência.</li><li>Ferrovias e energia como exemplos de investimento estrangeiro.</li><li>Modernização com transferência de excedentes.</li></ul></article>
+              <article class="card"><p class="card-kicker">Conceitos-chave</p><h4>Vocabulário necessário</h4><ul><li>Imperialismo</li><li>Exportação de capitais</li><li>Economia primário-exportadora</li><li>Balanço de pagamentos</li></ul></article>
+              <article class="card"><p class="card-kicker">Pergunta-guia</p><h4>Treino discursivo</h4><ul><li>Como o imperialismo pôde modernizar a economia brasileira e, ao mesmo tempo, aprofundar sua dependência?</li></ul></article>
+              <article class="card"><p class="card-kicker">Atenção</p><h4>Formulação forte</h4><ul><li>Use a ideia de contradição: impulso modernizador e subordinação externa acontecem juntos.</li></ul></article>
+            </div>
+          </div>
+        </details>
+
+        <details class="lesson" id="aula-15">
+          <summary><span class="lesson-num">A15</span>Transição capitalista <span class="lesson-date">02/04/2014</span><span class="priority medium">política econômica</span></summary>
+          <div class="lesson-body">
+            <ul class="lesson-meta">
+              <li><strong>Texto de apoio:</strong> Gustavo Franco.</li>
+              <li><strong>Função na prova:</strong> explicar instabilidade monetária e financeira na passagem ao capitalismo.</li>
+            </ul>
+            <div class="study-text">
+              <p>A aula destaca a instabilidade econômica da virada do século XIX para o XX. Gustavo Franco interpreta essa instabilidade como resultado de transformações estruturais: disseminação do trabalho assalariado, reestruturação bancária, necessidade de nova política monetária e reordenamento da inserção internacional do Brasil.</p>
+              <p>O conflito entre papelistas e metalistas organiza a aula. Papelistas defendiam maior flexibilidade monetária e expansão do crédito, associada ao início republicano e à gestão de Rui Barbosa. Metalistas defendiam saneamento monetário, contenção fiscal e estabilidade cambial, projetando uma reação conservadora nas décadas seguintes.</p>
+              <p>O importante é não tratar o debate como simples disputa técnica. Ele expressa interesses econômicos e respostas distintas à transição capitalista. A moeda, o crédito e o câmbio tornam-se instrumentos decisivos para organizar uma economia mais assalariada, urbana e integrada ao exterior.</p>
+            </div>
+            <div class="card-grid">
+              <article class="card"><p class="card-kicker">Pontos principais</p><h4>Núcleo da aula</h4><ul><li>Instabilidade econômica como efeito de mudanças estruturais.</li><li>Trabalho assalariado e sistema bancário em reordenação.</li><li>Papelistas defendem expansão monetária e crédito.</li><li>Metalistas defendem saneamento e estabilidade.</li></ul></article>
+              <article class="card"><p class="card-kicker">Conceitos-chave</p><h4>Termos centrais</h4><ul><li>Papelismo</li><li>Metalismo</li><li>Encilhamento</li><li>Saneamento monetário</li></ul></article>
+              <article class="card"><p class="card-kicker">Pergunta-guia</p><h4>Treino discursivo</h4><ul><li>Por que a disputa entre papelistas e metalistas revela a transição capitalista brasileira?</li></ul></article>
+              <article class="card"><p class="card-kicker">Conexão</p><h4>Ligação com 1930</h4><ul><li>A crise de coordenação monetária e financeira ajuda a entender os limites da ordem oligárquica.</li></ul></article>
+            </div>
+          </div>
+        </details>
+
+        <details class="lesson" id="aula-16">
+          <summary><span class="lesson-num">A16</span>Revolução de 1930 <span class="lesson-date">07/04/2014</span><span class="priority high">ponto de inflexão</span></summary>
+          <div class="lesson-body">
+            <ul class="lesson-meta">
+              <li><strong>Texto de apoio:</strong> Marieta e Sabino.</li>
+              <li><strong>Função na prova:</strong> fechar a crise da República Velha e abrir a Era Vargas.</li>
+            </ul>
+            <div class="study-text">
+              <p>A Revolução de 1930 é apresentada como ponto de inflexão da história econômica brasileira. Ela marca o fim de uma era baseada na política oligárquica da Primeira República e abre caminho para uma nova estrutura econômica e estatal, que se consolida nas décadas seguintes.</p>
+              <p>O roteiro insiste que 1930 não deve ser visto apenas como evento político. Trata-se de uma transição de longo prazo, com raízes na crise dos anos 1920, nas disputas intraoligárquicas, no tenentismo, na urbanização, nas tensões sociais e na crise do padrão agroexportador. A ruptura de 1930 condensa processos anteriores e não termina imediatamente em 1930.</p>
+              <p>A interpretação da Revolução de 1930 é disputada. Ainda assim, a aula ressalta sua leitura como revolução burguesa lenta, peculiar, incompleta e contraditória. O Estado pós-1930 passa a ter papel mais ativo na coordenação econômica, na centralização política e na construção de instituições nacionais.</p>
+            </div>
+            <div class="card-grid">
+              <article class="card"><p class="card-kicker">Pontos principais</p><h4>Núcleo da aula</h4><ul><li>1930 como fim da ordem oligárquica da Primeira República.</li><li>Transição de longo prazo, iniciada antes da revolução.</li><li>Crise dos anos 1920 como contexto indispensável.</li><li>Estado pós-1930 mais centralizado e interventor.</li></ul></article>
+              <article class="card"><p class="card-kicker">Conceitos-chave</p><h4>Vocabulário necessário</h4><ul><li>Revolução burguesa</li><li>Crise oligárquica</li><li>Tenentismo</li><li>Centralização estatal</li></ul></article>
+              <article class="card"><p class="card-kicker">Pergunta-guia</p><h4>Treino discursivo</h4><ul><li>Por que a Revolução de 1930 deve ser entendida como transição histórica e não apenas como troca de governo?</li></ul></article>
+              <article class="card"><p class="card-kicker">Atenção</p><h4>Erro comum</h4><ul><li>Não apresentar 1930 como ruptura total e imediata; o processo é gradual, contraditório e incompleto.</li></ul></article>
+            </div>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <section class="unit" id="unit-4">
+      <div class="unit-head">
+        <div>
+          <p class="section-kicker">Unidade 4</p>
+          <h2>Era Vargas, Estado econômico e industrialização brasileira</h2>
+          <p class="section-intro">A unidade 4 acompanha a consolidação do projeto varguista, a política econômica diante da crise de 1929, a construção do aparelho econômico do Estado e o debate sobre as origens da industrialização. O centro da unidade é a passagem de um Estado liberal-oligárquico para um Estado nacional mais centralizado, regulador e indutor do desenvolvimento.</p>
+        </div>
+        <aside class="unit-side">
+          <p class="section-kicker">Fio condutor</p>
+          <ul class="side-list">
+            <li>Varguismo como projeto político e econômico duradouro.</li>
+            <li>Crise de 1929 e defesa da renda cafeeira.</li>
+            <li>Estado moderno, legislação social e aparelho econômico.</li>
+            <li>Industrialização como debate historiográfico e processo acumulativo.</li>
+          </ul>
+          <div class="subtle-note">A unidade costuma render questões longas sobre Estado, crise e industrialização.</div>
+        </aside>
+      </div>
+
+      <div class="lesson-list">
+        <details class="lesson" id="aula-17">
+          <summary><span class="lesson-num">A17</span>A Era Vargas <span class="lesson-date">09/04/2014</span><span class="priority high">projeto nacional</span></summary>
+          <div class="lesson-body">
+            <ul class="lesson-meta"><li><strong>Função na prova:</strong> compreender Vargas como projeto, não apenas como governo.</li></ul>
+            <div class="study-text">
+              <p>A aula apresenta Vargas como figura central de um projeto político duradouro. Sua trajetória regional no Rio Grande do Sul, passagem pelo Ministério da Fazenda e chegada ao poder em 1930 o projetam como articulador de uma nova etapa da história brasileira. A Era Vargas não se limita aos anos de governo; ela cria uma clivagem entre varguistas e antivarguistas que atravessa décadas.</p>
+              <p>O varguismo é associado à construção de Estado nacional, modernização econômica, legislação social, incorporação controlada dos trabalhadores e nacionalismo. O projeto busca superar heranças da Primeira República: fragmentação regional, liberalismo oligárquico e baixa capacidade estatal de coordenação.</p>
+              <p>O nacionalismo aparece em várias dimensões: desenvolvimento industrial, interiorização do território, Marcha para o Oeste, mercado interno e construção cultural de identidade nacional. A ação de Vargas combina modernização, centralização e controle social.</p>
+            </div>
+            <div class="card-grid">
+              <article class="card"><p class="card-kicker">Pontos principais</p><h4>Núcleo da aula</h4><ul><li>Vargas como artífice de projeto político-econômico.</li><li>Clivagem entre varguismo e antivarguismo.</li><li>Estado nacional como resposta à fragmentação oligárquica.</li><li>Nacionalismo ligado a indústria, território e mercado interno.</li></ul></article>
+              <article class="card"><p class="card-kicker">Conceitos-chave</p><h4>Termos centrais</h4><ul><li>Varguismo</li><li>Nacionalismo</li><li>Estado nacional</li><li>Trabalhismo</li></ul></article>
+              <article class="card"><p class="card-kicker">Pergunta-guia</p><h4>Treino discursivo</h4><ul><li>Por que a Era Vargas deve ser entendida como projeto histórico de longa duração?</li></ul></article>
+              <article class="card"><p class="card-kicker">Conexão</p><h4>Ligação com aulas 18 e 19</h4><ul><li>A política econômica e as instituições dão forma concreta ao projeto varguista.</li></ul></article>
+            </div>
+          </div>
+        </details>
+
+        <details class="lesson" id="aula-18">
+          <summary><span class="lesson-num">A18</span>Política econômica na Era Vargas <span class="lesson-date">14/04/2014</span><span class="priority high">Celso Furtado</span></summary>
+          <div class="lesson-body">
+            <ul class="lesson-meta"><li><strong>Texto de apoio:</strong> Celso Furtado.</li><li><strong>Função na prova:</strong> explicar crise de 1929, café e impulso à industrialização.</li></ul>
+            <div class="study-text">
+              <p>A aula trabalha a interpretação de Celso Furtado sobre a política econômica no início da Era Vargas. A crise de 1929 derruba a demanda internacional por café e ameaça a renda interna. A resposta estatal, ao sustentar parte da renda cafeeira e defender o mercado interno, produz efeitos importantes para a industrialização.</p>
+              <p>O argumento de Furtado é técnico, mas tem sentido histórico amplo: a política de defesa do café e a desvalorização cambial deslocam estímulos para a produção interna. Ao restringir importações e preservar renda, a crise cria condições para substituição de importações e expansão industrial.</p>
+              <p>A aula mostra que a industrialização não nasce simplesmente de uma decisão planejada. Ela resulta da combinação entre crise externa, política econômica, mercado interno e capacidade produtiva acumulada. O Estado passa a ter papel mais ativo na coordenação econômica.</p>
+            </div>
+            <div class="card-grid">
+              <article class="card"><p class="card-kicker">Pontos principais</p><h4>Núcleo da aula</h4><ul><li>Crise de 1929 como choque externo decisivo.</li><li>Defesa da renda cafeeira preserva demanda interna.</li><li>Desvalorização cambial dificulta importações.</li><li>Substituição de importações ganha força.</li></ul></article>
+              <article class="card"><p class="card-kicker">Conceitos-chave</p><h4>Vocabulário necessário</h4><ul><li>Defesa do café</li><li>Renda interna</li><li>Substituição de importações</li><li>Política anticíclica</li></ul></article>
+              <article class="card"><p class="card-kicker">Pergunta-guia</p><h4>Treino discursivo</h4><ul><li>Como a política econômica diante da crise de 1929 ajudou a deslocar o dinamismo para o mercado interno?</li></ul></article>
+              <article class="card"><p class="card-kicker">Atenção</p><h4>Formulação forte</h4><ul><li>A defesa do café era voltada ao setor exportador, mas seus efeitos estimularam a indústria.</li></ul></article>
+            </div>
+          </div>
+        </details>
+
+        <details class="lesson" id="aula-19">
+          <summary><span class="lesson-num">A19</span>Instituições na Era Vargas <span class="lesson-date">16/04/2014</span><span class="priority high">Estado econômico</span></summary>
+          <div class="lesson-body">
+            <ul class="lesson-meta"><li><strong>Texto de apoio:</strong> Sonia Draibe.</li><li><strong>Função na prova:</strong> mostrar como o Estado se torna agente de industrialização.</li></ul>
+            <div class="study-text">
+              <p>A aula discute a constituição do aparelho econômico do Estado a partir de 1930. Sonia Draibe entende o período como etapa fundamental de consolidação do capitalismo industrial no Brasil, marcada por centralização, articulação nacional e criação de instituições capazes de intervir na economia.</p>
+              <p>O Estado moderno pós-1930 rompe parcialmente com a ação regionalizada e fragmentada da República Velha. Ele passa a coordenar políticas, regular relações sociais, produzir legislação trabalhista e construir mecanismos de planejamento e intervenção. O aparelho econômico estatal não surge pronto; ele é resultado de disputa entre forças sociais e de negociação política.</p>
+              <p>A aula também aponta limites. A burguesia industrial tem atuação contraditória e nem sempre conduz diretamente o processo. O Estado assume protagonismo porque precisa organizar interesses, criar infraestrutura institucional e lidar com resistências de grupos agrários, regionais e industriais.</p>
+            </div>
+            <div class="card-grid">
+              <article class="card"><p class="card-kicker">Pontos principais</p><h4>Núcleo da aula</h4><ul><li>Constituição do aparelho econômico do Estado.</li><li>Centralização e articulação nacional depois de 1930.</li><li>Estado como organizador da industrialização.</li><li>Disputa social em torno do projeto de modernização.</li></ul></article>
+              <article class="card"><p class="card-kicker">Conceitos-chave</p><h4>Termos centrais</h4><ul><li>Aparelho econômico do Estado</li><li>Centralização</li><li>Capitalismo industrial</li><li>Regulação social</li></ul></article>
+              <article class="card"><p class="card-kicker">Pergunta-guia</p><h4>Treino discursivo</h4><ul><li>Por que a construção institucional do Estado foi decisiva para a industrialização brasileira?</li></ul></article>
+              <article class="card"><p class="card-kicker">Armadilha</p><h4>Como não errar</h4><ul><li>Não atribuir a industrialização apenas à burguesia industrial; o Estado é ator central.</li></ul></article>
+            </div>
+          </div>
+        </details>
+
+        <details class="lesson" id="aula-20">
+          <summary><span class="lesson-num">A20</span>Origens da industrialização <span class="lesson-date">23/04/2014</span><span class="priority high">debate historiográfico</span></summary>
+          <div class="lesson-body">
+            <ul class="lesson-meta"><li><strong>Texto de apoio:</strong> Wilson Suzigan.</li><li><strong>Função na prova:</strong> organizar o debate sobre quando e por que a industrialização brasileira ganha forma.</li></ul>
+            <div class="study-text">
+              <p>A aula retoma as origens da industrialização brasileira nas últimas décadas do século XIX e início do século XX. Wilson Suzigan organiza o debate historiográfico em escolas interpretativas para discutir se a indústria nasce principalmente da expansão cafeeira, da substituição de importações, de choques externos, do mercado interno ou de fatores institucionais.</p>
+              <p>O ponto central é que a industrialização não pode ser explicada por uma causa única. O café gera renda, mercado, infraestrutura e capital; as crises externas alteram preços relativos e restringem importações; o mercado interno se amplia; e o Estado cria condições institucionais mais favoráveis a partir de 1930.</p>
+              <p>A aula funciona como fechamento: ela conecta República Velha e Era Vargas. Mostra que havia crescimento industrial antes de 1930, mas que a mudança de escala e coordenação ocorre com crise, política econômica e Estado. O debate é menos sobre uma data exata e mais sobre os mecanismos que tornam a industrialização possível.</p>
+            </div>
+            <div class="card-grid">
+              <article class="card"><p class="card-kicker">Pontos principais</p><h4>Núcleo da aula</h4><ul><li>Industrialização como processo anterior e posterior a 1930.</li><li>Café cria renda, infraestrutura e mercado.</li><li>Crises externas estimulam substituição de importações.</li><li>Estado amplia coordenação institucional.</li></ul></article>
+              <article class="card"><p class="card-kicker">Conceitos-chave</p><h4>Vocabulário necessário</h4><ul><li>Origens da industrialização</li><li>Substituição de importações</li><li>Mercado interno</li><li>Debate historiográfico</li></ul></article>
+              <article class="card"><p class="card-kicker">Pergunta-guia</p><h4>Treino discursivo</h4><ul><li>Por que a industrialização brasileira deve ser explicada por múltiplos fatores e não por uma causa única?</li></ul></article>
+              <article class="card"><p class="card-kicker">Conexão</p><h4>Fechamento da unidade</h4><ul><li>A aula 20 amarra café, crise, Estado, mercado interno e política econômica.</li></ul></article>
+            </div>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <section class="panel" id="midias">
+      <p class="section-kicker">Podcasts e vídeos</p>
+      <h2>Mini player do Google Drive</h2>
+      <div class="panel-grid">
+        <article class="mini-card">
+          <p class="section-kicker">Biblioteca incorporada</p>
+          <p>Os podcasts e vídeos das aulas já estão prontos no Drive. A janela abaixo carrega a pasta diretamente dentro do site; se o Google bloquear a visualização incorporada em algum navegador, use o link de abertura externa.</p>
+          <iframe
+            class="drive-audio"
+            style="height: 360px; margin-top: 16px;"
+            src="https://drive.google.com/embeddedfolderview?id=1zgWE_e8xRL-fKyGXwDzAGMllQKpypUqS#grid"
+            title="Podcasts e vídeos HEB - Prova 2"
+            loading="lazy"
+            allow="autoplay; fullscreen"
+          ></iframe>
+          <div class="audio-fallback"><a href="https://drive.google.com/drive/folders/1zgWE_e8xRL-fKyGXwDzAGMllQKpypUqS" target="_blank" rel="noopener noreferrer">Abrir pasta de podcasts e vídeos no Drive</a></div>
+        </article>
+        <article class="mini-card">
+          <p class="section-kicker">Sugestão de uso</p>
+          <ul class="mini-list">
+            <li>Abra o Drive após ler cada aula.</li>
+            <li>Use o podcast para revisão passiva.</li>
+            <li>Use o vídeo para revisar a estrutura argumentativa antes da prova.</li>
+            <li>Volte para a revisão final para treinar respostas completas.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="review" id="revisao-final">
+      <div class="review-head">
+        <div>
+          <p class="section-kicker">Revisão Final</p>
+          <h2>Mapa de revisão para unidades 3 e 4</h2>
+          <p class="section-intro">A síntese final cruza as aulas para montar respostas discursivas: a Primeira República cria uma modernização subordinada e oligárquica; 1930 rompe esse padrão político; a Era Vargas constrói um Estado capaz de coordenar política econômica, trabalho e industrialização.</p>
+        </div>
+        <aside class="review-side">
+          <p class="section-kicker">Temas mais sensíveis</p>
+          <ul class="side-list">
+            <li>Aula 12: liberalismo oligárquico e política dos governadores.</li>
+            <li>Aulas 13–14: imperialismo, dependência e transição capitalista.</li>
+            <li>Aula 16: Revolução de 1930 como transição de longo prazo.</li>
+            <li>Aulas 18–20: crise, Estado e industrialização.</li>
+          </ul>
+        </aside>
+      </div>
+
+      <div class="review-grid">
+        <article class="compare-card">
+          <p class="card-kicker">Perguntas centrais</p>
+          <h3>Questões para treinar</h3>
+          <ul class="compare-list">
+            <li>Explique o sentido de liberalismo oligárquico na Primeira República.</li>
+            <li>Relacione café, capital estrangeiro e imperialismo na transição capitalista brasileira.</li>
+            <li>Por que a Revolução de 1930 é considerada uma inflexão histórica e econômica?</li>
+            <li>Como a crise de 1929 e a política de defesa do café estimularam o mercado interno?</li>
+            <li>Por que o Estado pós-1930 foi decisivo para a industrialização?</li>
+          </ul>
+        </article>
+
+        <article class="compare-card">
+          <p class="card-kicker">Continuidades</p>
+          <h3>O que atravessa as aulas</h3>
+          <ul class="compare-list">
+            <li>Modernização econômica combinada com conservação social.</li>
+            <li>Dependência externa como limite e impulso contraditório.</li>
+            <li>Estado cada vez mais importante na organização da economia.</li>
+            <li>Industrialização como processo acumulativo, não evento único.</li>
+          </ul>
+        </article>
+
+        <article class="compare-card">
+          <p class="card-kicker">Autores-chave</p>
+          <h3>Quem precisa aparecer</h3>
+          <ul class="compare-list">
+            <li>Maria Efigênia Resende: liberalismo oligárquico.</li>
+            <li>Caio Prado Júnior e Paul Singer: transição capitalista e imperialismo.</li>
+            <li>Gustavo Franco: papelistas, metalistas e instabilidade.</li>
+            <li>Celso Furtado, Sonia Draibe e Wilson Suzigan: crise, Estado e industrialização.</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item"><b>1889–1891</b>República e Constituição liberal abrem nova ordem institucional, mas sob controle oligárquico.</div>
+        <div class="timeline-item"><b>1890s–1910s</b>Café, crédito, ferrovias, capital estrangeiro e disputas monetárias ampliam a transição capitalista.</div>
+        <div class="timeline-item"><b>Anos 1920</b>Crises políticas, tenentismo, urbanização e tensões econômicas desgastam a Primeira República.</div>
+        <div class="timeline-item"><b>1930</b>Revolução encerra a ordem oligárquica clássica e inicia centralização estatal.</div>
+        <div class="timeline-item"><b>1930s</b>Crise de 1929, defesa do café e substituição de importações deslocam o dinamismo para o mercado interno.</div>
+        <div class="timeline-item"><b>1930–1945</b>Estado econômico, legislação social e instituições nacionais consolidam nova base para industrialização.</div>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    const lessons = document.querySelectorAll('.lesson');
+    const themeToggle = document.getElementById('theme-toggle');
+    const expandAll = document.getElementById('expand-all');
+    const collapseAll = document.getElementById('collapse-all');
+    const navLinks = document.querySelectorAll('#top-nav a');
+    const sections = document.querySelectorAll('#escopo, #unit-3, #unit-4, #midias, #revisao-final');
+
+    const THEME_KEY = 'heb-theme';
+    const root = document.documentElement;
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    let activeTheme = localStorage.getItem(THEME_KEY);
+
+    if (activeTheme !== 'light' && activeTheme !== 'dark') {
+      activeTheme = prefersDark ? 'dark' : 'light';
+    }
+
+    const applyTheme = (theme) => {
+      root.setAttribute('data-theme', theme);
+      if (!themeToggle) return;
+      const isDark = theme === 'dark';
+      themeToggle.textContent = isDark ? 'Modo claro' : 'Modo noturno';
+      themeToggle.setAttribute('aria-pressed', String(isDark));
+    };
+
+    applyTheme(activeTheme);
+
+    if (themeToggle) {
+      themeToggle.addEventListener('click', () => {
+        activeTheme = activeTheme === 'dark' ? 'light' : 'dark';
+        applyTheme(activeTheme);
+        localStorage.setItem(THEME_KEY, activeTheme);
+      });
+    }
+
+    if (expandAll) expandAll.addEventListener('click', () => lessons.forEach((lesson) => { lesson.open = true; }));
+    if (collapseAll) collapseAll.addEventListener('click', () => lessons.forEach((lesson) => { lesson.open = false; }));
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        navLinks.forEach((link) => {
+          link.classList.toggle('active', link.getAttribute('href') === `#${entry.target.id}`);
+        });
+      });
+    }, { rootMargin: '-38% 0px -48% 0px', threshold: 0.05 });
+
+    sections.forEach((section) => observer.observe(section));
+
+    const stickyShell = document.querySelector('.sticky-shell');
+    let lastScrollY = window.scrollY;
+    let headerTicking = false;
+
+    const updateStickyHeader = () => {
+      if (!stickyShell) return;
+      const currentY = window.scrollY;
+      const delta = currentY - lastScrollY;
+
+      if (currentY < 120 || delta < -8) {
+        stickyShell.classList.remove('is-hidden');
+      } else if (delta > 8) {
+        stickyShell.classList.add('is-hidden');
+      }
+
+      lastScrollY = currentY;
+      headerTicking = false;
+    };
+
+    window.addEventListener('scroll', () => {
+      if (headerTicking) return;
+      headerTicking = true;
+      window.requestAnimationFrame(updateStickyHeader);
+    }, { passive: true });
+  </script>
+</body>
+</html>
+
