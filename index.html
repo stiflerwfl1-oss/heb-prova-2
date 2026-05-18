@@ -415,6 +415,62 @@
       line-height: 1.45;
     }
 
+    .flash-study {
+      margin: 12px 0 10px;
+      padding: 12px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: var(--paper-strong);
+      display: grid;
+      gap: 12px;
+    }
+
+    .flash-study h4 {
+      font-size: 0.98rem;
+      margin: 0;
+    }
+
+    .concept-list {
+      display: grid;
+      gap: 8px;
+    }
+
+    .concept-item {
+      padding: 10px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: var(--surface-soft);
+      color: var(--study-text);
+      font-size: 0.94rem;
+      line-height: 1.45;
+    }
+
+    .flashcard-box {
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 12px;
+      background: var(--surface-soft);
+      display: grid;
+      gap: 8px;
+    }
+
+    .flashcard-q {
+      font-weight: 800;
+      color: var(--ink);
+    }
+
+    .flashcard-a {
+      color: var(--study-text);
+      font-size: 0.94rem;
+      line-height: 1.45;
+    }
+
+    .flashcard-actions {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
 
     .panel {
       margin-top: 18px;
@@ -1641,6 +1697,116 @@
 
     const reviewState = readJsonStorage(REVIEW_KEY, {});
     const noteState = readJsonStorage(NOTE_KEY, {});
+    const FLASH_DATA = {
+      "aula-12": {
+        concepts: [
+          ["Liberalismo oligárquico", "Instituições liberais formais com poder real concentrado nas oligarquias estaduais e no controle local do voto."],
+          ["Coronelismo", "Sistema de mando local baseado em clientelismo, coerção política e intermediação de favores entre população e elites."],
+          ["Política dos governadores", "Pacto entre Executivo federal e elites estaduais para garantir estabilidade política via controle eleitoral."]
+        ],
+        cards: [
+          ["Por que a Primeira República era liberal e excludente ao mesmo tempo?", "Porque a Constituição tinha forma liberal, mas prática política restrita por voto controlado, fraude e domínio oligárquico."],
+          ["Qual a função econômica da ordem oligárquica?", "Proteger o padrão agroexportador, especialmente o café, com decisões fiscais e cambiais favoráveis às elites exportadoras."],
+          ["O que desmonta o sistema no fim dos anos 1920?", "Perda de capacidade de coordenação entre elites, aumento de conflitos regionais e pressão social crescente."]
+        ]
+      },
+      "aula-13": {
+        concepts: [
+          ["República Burguesa", "Leitura de Caio Prado sobre avanço de relações capitalistas sem ruptura completa com base agroexportadora."],
+          ["Capitalismo dependente", "Expansão econômica subordinada a financiamento, comércio e tecnologia externos."],
+          ["Transição desigual", "Modernização coexistindo com concentração de renda e persistência de estruturas arcaicas."]
+        ],
+        cards: [
+          ["Qual contradição central da aula 13?", "Modernização capitalista real com manutenção da dependência externa e do padrão primário-exportador."],
+          ["Como imigração e ferrovias entram na explicação?", "Aumentam trabalho livre e integração econômica, apoiando expansão urbana e industrial parcial."],
+          ["Por que não é industrialização plena?", "Porque núcleo dinâmico continua no setor agroexportador e a autonomia econômica segue limitada."]
+        ]
+      },
+      "aula-14": {
+        concepts: [
+          ["Papelismo", "Defesa de expansão monetária e crédito para sustentar atividade econômica em contexto de transformação produtiva."],
+          ["Metalismo", "Ênfase em estabilidade cambial, disciplina fiscal e controle monetário para conter instabilidades."],
+          ["Conflito distributivo", "Política econômica redistribui custos e ganhos entre exportadores, credores, setores urbanos e trabalhadores."]
+        ],
+        cards: [
+          ["Por que moeda e câmbio não são temas técnicos neutros?", "Porque cada decisão favorece grupos sociais diferentes e define quem paga custos do ajuste."],
+          ["Como o café condiciona a política econômica?", "Impõe necessidade de administrar preço, crédito e câmbio para sustentar renda exportadora."],
+          ["Como responder bem essa aula na prova?", "Comparar interpretações e mostrar causalidade entre choque externo, reação do Estado e efeitos sociais."]
+        ]
+      },
+      "aula-15": {
+        concepts: [
+          ["Imperialismo", "Fase do capitalismo com exportação de capitais, expansão financeira internacional e disputa por mercados."],
+          ["Inserção periférica", "Participação ativa na economia mundial, mas com baixa autonomia sobre finanças, tecnologia e termos de troca."],
+          ["Transferência de excedente", "Parte da riqueza gerada internamente é apropriada externamente por dívida, remessas e controle de serviços."]
+        ],
+        cards: [
+          ["Qual síntese da aula 15?", "Modernização periférica: cresce infraestrutura e integração, mas aumenta vulnerabilidade externa."],
+          ["Como dívida externa atua na dependência?", "Liga política econômica interna às exigências de credores e limita margem de decisão nacional."],
+          ["Qual ponte com Caio Prado?", "Ambos mostram avanço capitalista; Singer enfatiza mais os mecanismos quantitativos da subordinação internacional."]
+        ]
+      },
+      "aula-16": {
+        concepts: [
+          ["Revolução de 1930", "Inflexão histórica que fecha crise da ordem oligárquica e abre ciclo de centralização estatal."],
+          ["Transição longa", "Mudança acumulada ao longo dos anos 1920, não evento isolado de troca de governo."],
+          ["Ruptura e continuidade", "Muda eixo político-institucional, mas várias hierarquias sociais e econômicas permanecem."]
+        ],
+        cards: [
+          ["Por que 1930 não é só golpe de elite?", "Porque condensa crise estrutural política e econômica da Primeira República."],
+          ["Como o tenentismo entra nessa leitura?", "Como sintoma de desgaste do arranjo oligárquico e demanda por reordenação do Estado."],
+          ["Qual erro comum em prova?", "Tratar 1930 como ruptura total e imediata sem mostrar permanências e processo gradual."]
+        ]
+      },
+      "aula-17": {
+        concepts: [
+          ["Varguismo", "Projeto de Estado nacional com desenvolvimentismo, trabalhismo e nacionalismo articulados."],
+          ["Legitimidade estatal", "Estado se apresenta como mediador de conflitos e agente da modernização econômica."],
+          ["Inclusão regulada", "Ampliação de direitos sociais combinada com controle político e sindical."]
+        ],
+        cards: [
+          ["Qual ideia central da aula 17?", "Vargas como projeto histórico, não apenas liderança pessoal ou governo episódico."],
+          ["Como o nacionalismo aparece no período?", "Na industrialização, integração territorial e construção de mercado interno."],
+          ["Qual tensão principal do varguismo?", "Expansão de direitos sociais junto com centralização autoritária."]
+        ]
+      },
+      "aula-18": {
+        concepts: [
+          ["Defesa do café", "Intervenção estatal para reduzir queda de renda no setor exportador durante a crise internacional."],
+          ["Substituição de importações", "Produção interna cresce quando importações ficam caras ou escassas após choque externo."],
+          ["Cadeia causal furtadiana", "Crise externa -> intervenção -> manutenção de demanda -> expansão industrial doméstica."]
+        ],
+        cards: [
+          ["Qual ponto mais cobrado dessa aula?", "A sequência causal de Furtado, não só a frase de que 1929 gerou industrialização."],
+          ["Por que não houve plano industrial inicial completo?", "Porque impulso industrial emerge como efeito de políticas defensivas da crise."],
+          ["Como câmbio entra no argumento?", "Desvalorização torna importação mais difícil e desloca demanda para bens internos."]
+        ]
+      },
+      "aula-19": {
+        concepts: [
+          ["Aparelho econômico do Estado", "Conjunto de instituições e burocracias para formular, coordenar e executar política econômica nacional."],
+          ["Estado de Compromisso", "Autonomia relativa do Estado para arbitrar conflitos entre frações de classe e regiões."],
+          ["Capacidade estatal", "Habilidade de manter estratégia de longo prazo além de conjunturas imediatas."]
+        ],
+        cards: [
+          ["Qual tese de Draibe para prova?", "Industrialização exige Estado centralizado e institucionalmente capaz, não só iniciativa privada."],
+          ["Por que dividir 1930-1945 em fases?", "Porque mostra construção gradual do aparato estatal e evita visão estática do período."],
+          ["Qual ganho da burocracia econômica nacional?", "Mais continuidade de políticas e menor dependência de arranjos regionais fragmentados."]
+        ]
+      },
+      "aula-20": {
+        concepts: [
+          ["Debate historiográfico", "Comparação de óticas explicativas sobre origem da industrialização brasileira."],
+          ["Multicausalidade", "Industrialização resulta de combinação de café, mercado interno, choques externos e ação estatal."],
+          ["Inflexão de 1930", "Mudança de ritmo e coordenação do processo, sem apagar raízes anteriores."]
+        ],
+        cards: [
+          ["Como responder a pergunta clássica de Suzigan?", "Caracterize óticas, compare hipóteses e mostre convergências na relação café-indústria."],
+          ["Qual erro comum na aula 20?", "Escolher causa única e ignorar articulação entre economia externa, mercado interno e Estado."],
+          ["Qual fórmula de fechamento da unidade?", "Processo de longa duração com aceleração por crise e reorganização institucional."]
+        ]
+      }
+    };
 
     const updateProgress = () => {
       const total = lessons.length;
@@ -1693,6 +1859,60 @@
           noteState[lesson.id] = note.value;
           writeJsonStorage(NOTE_KEY, noteState);
         });
+      }
+
+      const data = FLASH_DATA[lesson.id];
+      if (data) {
+        const flashWrap = document.createElement('section');
+        flashWrap.className = 'flash-study';
+        flashWrap.innerHTML = `
+          <h4>Conceitos explicados (${lessonNum})</h4>
+          <div class="concept-list">
+            ${data.concepts.map(([term, def]) => `<div class="concept-item"><strong>${term}:</strong> ${def}</div>`).join('')}
+          </div>
+          <div class="flashcard-box" data-flash-box="${lesson.id}">
+            <p class="card-kicker">Flashcard (${lessonNum})</p>
+            <div class="flashcard-q" data-flash-q></div>
+            <div class="flashcard-a" data-flash-a hidden></div>
+            <div class="flashcard-actions">
+              <button type="button" data-flash-reveal>Revelar resposta</button>
+              <button type="button" data-flash-next>Próximo card</button>
+            </div>
+          </div>
+        `;
+        body.insertBefore(flashWrap, body.querySelector('.lesson-media'));
+
+        const box = flashWrap.querySelector(`[data-flash-box="${lesson.id}"]`);
+        const qEl = box?.querySelector('[data-flash-q]');
+        const aEl = box?.querySelector('[data-flash-a]');
+        const revealBtn = box?.querySelector('[data-flash-reveal]');
+        const nextBtn = box?.querySelector('[data-flash-next]');
+        let cardIdx = 0;
+
+        const renderCard = () => {
+          const [q, a] = data.cards[cardIdx];
+          if (qEl) qEl.textContent = q;
+          if (aEl) {
+            aEl.textContent = a;
+            aEl.hidden = true;
+          }
+          if (revealBtn) revealBtn.textContent = 'Revelar resposta';
+        };
+
+        renderCard();
+
+        if (revealBtn && aEl) {
+          revealBtn.addEventListener('click', () => {
+            aEl.hidden = !aEl.hidden;
+            revealBtn.textContent = aEl.hidden ? 'Revelar resposta' : 'Ocultar resposta';
+          });
+        }
+        if (nextBtn) {
+          nextBtn.addEventListener('click', () => {
+            cardIdx = (cardIdx + 1) % data.cards.length;
+            renderCard();
+          });
+        }
       }
     });
 
